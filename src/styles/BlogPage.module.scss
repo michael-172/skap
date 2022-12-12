@@ -1,6 +1,7 @@
 .Blog {
   min-height: calc(100vh - 500px);
   margin-top: 150px;
+  margin-bottom: 50px;
 }
 .Blog__Top {
   margin-bottom: 24px;
@@ -19,15 +20,19 @@
       width: 100%;
       height: 100%;
       max-width: 100%;
+      @media (max-width: 567px) {
+        object-fit: contain;
+      }
     }
   }
 
   .TypeAndDate {
-    display: flex;
     justify-content: space-between;
-    width: 255px;
+    width: fit-content;
     font-family: "Poppins", sans-serif;
     margin-top: 13px;
+    display: flex;
+    gap: 10px;
     .Type {
       color: #031843;
       font-weight: 500;

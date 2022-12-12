@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import App_Navbar from "../Components/App_Navbar";
 import Footer from "../Components/Footer";
+import { getService, getServices } from "../ReduxToolkit/ServicesSlice";
 import { getBlogs } from "../ReduxToolkit/Store/blogsSlice";
 import styles from "../styles/BlogPage.module.scss";
 
@@ -12,13 +13,12 @@ const Blog = () => {
   const BlogId = Blog.id;
   const dispatch = useDispatch();
 
+  const { blogs } = useSelector((state) => state.blogs);
   useEffect(() => {
     dispatch(getBlogs(BlogId));
   }, [dispatch]);
-
-  const { blogs } = useSelector((state) => state.blogs);
   console.log(blogs);
-
+  const globalState = useSelector((state) => state);
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -35,15 +35,15 @@ const Blog = () => {
           <span className={styles.Breadcrumb}>Home {">"} Blog</span>
           {/* Blog__Top */}
           <div className={styles.Blog__Top}>
-            <h2 className={styles.BlogMainTitle}>
-              How To Do Affiliate Marketing on Instagram
-            </h2>
+            <h2 className={styles.BlogMainTitle}>{blogs.title}</h2>
             <div className={styles.imageWrapper}>
-              <Image src="../Mask group.png" />
+              <Image src={blogs.blogImages} />
             </div>
 
             <div className={styles.TypeAndDate}>
-              <span className={styles.Type}>Branding</span>
+              <span className={styles.Type}>
+                {globalState.services.service.name}
+              </span>
               <span>|</span>
               <span className={styles.Date}>November 28, 2022</span>
             </div>

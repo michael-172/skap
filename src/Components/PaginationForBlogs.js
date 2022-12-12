@@ -26,7 +26,12 @@ const Pagination = ({ items, itemsPerPage }) => {
         {currentItems &&
           currentItems.map((item, idx) => (
             <>
-              <BlogCard id={`item-${idx}`} item={item} key={idx} />
+              <BlogCard
+                id={`item-${idx}`}
+                item={item}
+                key={idx}
+                serviceId={item.serviceId}
+              />
             </>
           ))}
         {console.log(currentItems)}

@@ -4,7 +4,7 @@ export const getServices = createAsyncThunk(
   "Skapluie/getServices",
   async (_, thunkAPI) => {
     const response = await fetch(
-      "http://abnuur-001-site1.btempurl.com/api/services"
+      "http://abnuur-001-site1.btempurl.com/api/Services"
     );
     const res = await response.json();
     return res;
@@ -16,7 +16,7 @@ export const getService = createAsyncThunk(
   async (id, thunkAPI) => {
     try {
       const response = await fetch(
-        `http://abnuur-001-site1.btempurl.com/api/services/${id}`
+        `http://abnuur-001-site1.btempurl.com/api/Services/${id}`
       );
       const res = await response.json();
       return res;

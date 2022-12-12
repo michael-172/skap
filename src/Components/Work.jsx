@@ -104,41 +104,13 @@ const Work = () => {
           slidesToSlide={1}
           swipeable
         >
-          <img
-            src={"/Work/1 (7).png"}
-            alt={"test_alt"}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          />
-          <img
-            src={"/Work/1 (2).png"}
-            alt={"test_alt"}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          />
-          <img
-            src={"/Work/1 (3).png"}
-            alt={"test_alt"}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          />
-          <img
-            src={"/Work/1 (4).png"}
-            alt={"test_alt"}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          />
-          <img
-            src={"/Work/1 (1).png"}
-            alt={"test_alt"}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          />
-          <img
-            src={"/Work/1 (5).png"}
-            alt={"test_alt"}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          />
-          <img
-            src={"/Work/1 (6).png"}
-            alt={"test_alt"}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          />
+          {work.map((el) => (
+            <img
+              src={el.workImages}
+              alt={"test_alt"}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          ))}
         </Carousel>
       )}
     </div>
