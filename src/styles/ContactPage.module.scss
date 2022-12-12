@@ -1,0 +1,56 @@
+.Contact {
+  min-height: calc(100vh - 500px);
+  margin-top: 30px;
+  color: #666666;
+  margin-top: 150px;
+}
+
+.Heading {
+  text-align: center;
+  color: #666666;
+  font-weight: 400;
+}
+
+.Breadcrumb {
+  color: #adabab;
+  margin: 20px 0px;
+}
+
+.ContactForm {
+  width: 600px !important;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 15px;
+}
+
+.ContactForm input {
+  background-color: transparent;
+  border-color: #666666;
+  padding: 10px;
+}
+.msgInput {
+  padding: 30px !important;
+  position: relative;
+  padding-top: 5px !important;
+  padding-left: 10px !important;
+  height: 90px;
+}
+
+.msgInput::placeholder {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  transition: 0.1s;
+}
+
+.msgInput:focus::placeholder {
+  color: transparent !important;
+}
+
+.Button {
+  width: 100%;
+  background: #4cbff2;
+  border: none;
+  outline: none;
+  padding: 10px 0px;
+}

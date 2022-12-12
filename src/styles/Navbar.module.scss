@@ -1,0 +1,40 @@
+.Navbar {
+  background-color: transparent;
+  box-shadow: none;
+  color: #666666;
+  font-weight: 400;
+  padding: 0px !important;
+  font-family: "Roboto";
+  position: fixed !important;
+  width: 100%;
+  transition: 0.2s ease-in-out;
+  z-index: 111;
+  top: 0;
+  height: 80px;
+  z-index: 555;
+}
+
+.NavbarBrand {
+}
+
+@media (min-width: 990px) {
+  .navbar-expand-sm .navbar-toggler {
+    display: none;
+  }
+}
+
+.NavbarMobileMenu {
+  background: transparent;
+  border: none !important;
+  box-shadow: none;
+}
+
+.NavbarMobileMenu:focus {
+  box-shadow: none !important;
+}
+.sticky {
+  position: fixed !important;
+  top: 0;
+  box-shadow: 0 0 10px 1px #80808040;
+  width: 100%;
+}

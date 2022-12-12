@@ -1,0 +1,112 @@
+.Landing {
+  //   height: 70vh;
+  //   @media (max-width: 1200px) {
+  //     height: calc(100vh - 100px);
+  //   }
+  height: 100vh;
+  @media (max-width: 768px) {
+    height: 75vh;
+  }
+}
+
+.Text {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.Text_Heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 86px;
+  background: -webkit-linear-gradient(
+    323deg,
+    #2ab1e2 0%,
+    #4cc6ef 30%,
+    #5a66b0 65.29%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 35px;
+  position: relative;
+  @media (max-width: 1400px) {
+    font-size: 70px;
+  }
+  @media (max-width: 992px) {
+    font-size: 60px;
+  }
+  @media (max-width: 992px) {
+    font-size: 60px;
+  }
+  @media (max-width: 468px) {
+    font-size: 56px;
+  }
+
+  position: relative;
+}
+
+.TextBackground {
+  color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  left: 0;
+  max-width: 100%;
+}
+
+.Button_Container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-left: 3px solid #15addd;
+  padding-left: 25px;
+}
+
+.Text_Button {
+  width: fit-content;
+  border: 2px solid #15addd;
+  color: #666666;
+  padding: 10px 30px;
+  border-radius: 26px;
+  background: transparent;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s;
+  background-img: none;
+}
+
+.Text_Button:hover {
+  background-color: #15addd;
+  color: #fff;
+  border-color: transparent;
+}
+
+.Landingimg {
+  width: calc(100% - 100px);
+  height: auto;
+  max-width: 100%;
+  animation: topdown 1s linear infinite;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+@keyframes topdown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

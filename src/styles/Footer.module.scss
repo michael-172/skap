@@ -1,0 +1,99 @@
+.Footer {
+  background-color: #001641;
+  height: 400px;
+  color: #fff;
+  padding: 30px 0px;
+  overflow: hidden;
+  min-height: 520px;
+  max-height: fit-content;
+  @media (max-width: 768px) {
+    height: fit-content;
+  }
+}
+
+.Footer_container {
+  height: 100%;
+}
+.Footer_Row {
+  height: 100%;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  color: #ebecee;
+  font-family: "Lato", sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  color: #ebecee;
+  font-family: "Lato", sans-serif;
+  position: relative;
+  height: 224px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.column.first {
+  gap: 15px;
+}
+
+.thirdColumn {
+  gap: 20px;
+  justify-content: flex-start;
+  height: fit-content;
+}
+
+.PhoneNumber {
+  font-weight: bolder;
+  color: #fff;
+  @media (max-width: 992px) {
+    font-size: 28px;
+  }
+}
+.firstSpan {
+  margin-bottom: 20px;
+}
+
+.FooterLogo {
+  top: -20px;
+  position: relative;
+}
+
+.footerBack {
+  color: transparent;
+  position: absolute;
+  left: -50%;
+  object-fit: cover;
+}
+
+.QuickLinks {
+  font-weight: 700;
+  margin: 0;
+}
+
+.footerUl {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.column.second {
+  padding-top: 40px;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 792px) {
+  .SocialMediaParent div {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,39 @@
+.Blog {
+  min-height: calc(100vh - 500px);
+  margin-top: 150px;
+}
+.Blog__Top {
+  margin-bottom: 24px;
+  .BlogMainTitle {
+    color: #031843;
+    margin-top: 46px;
+    margin-bottom: 28px;
+    font-weight: 500;
+    font-family: "Roboto";
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: 500px;
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .TypeAndDate {
+    display: flex;
+    justify-content: space-between;
+    width: 255px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 13px;
+    .Type {
+      color: #031843;
+      font-weight: 500;
+    }
+    .Date {
+      color: #717171;
+    }
+  }
+}

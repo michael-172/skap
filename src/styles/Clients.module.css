@@ -1,0 +1,59 @@
+.Clients {
+  margin: 30px 0px 100px 0px;
+}
+.Clients__Heading {
+  color: #666666;
+  text-align: center;
+  margin-bottom: 44px;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .Clients__Heading {
+    margin-bottom: 0px;
+  }
+}
+.Clients__Paragraph {
+  color: #666666;
+  font-size: 25px;
+  font-size: 20px;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+@media (max-width: 476px) {
+  .Clients__Paragraph {
+    font-size: 16px;
+  }
+}
+
+.ClientsWrapper {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  justify-content: center;
+  gap: 30px;
+}
+
+.ClientsWrapper img {
+  object-fit: contain;
+}
+
+.Client {
+  object-fit: contain;
+}
+
+.ClientsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.Background {
+  color: transparent;
+  position: absolute;
+  left: 0;
+  top: -115px;
+  width: 378px;
+  height: 477px;
+}

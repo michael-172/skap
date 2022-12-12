@@ -1,0 +1,29 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "service_name": "Branding",
+      "image": "./Our Services/1.png"
+    },
+    {
+      "id": 2,
+      "service_name": "Printing",
+      "image": "./Our Services/2.png"
+    },
+    {
+      "id": 3,
+      "service_name": "Digital Marketing",
+      "image": "./Our Services/3.png"
+    },
+    {
+      "id": 4,
+      "service_name": "Web & App",
+      "image": "./Our Services/4.png"
+    },
+    {
+      "id": 5,
+      "service_name": "Social Media",
+      "image": "./Our Services/2.png"
+    }
+  ]
+}

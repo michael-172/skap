@@ -1,0 +1,108 @@
+.Work {
+  min-height: calc(100vh - 500px);
+  margin-top: 150px;
+}
+
+.Header {
+  color: #666666;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  margin: 2px 0px 10px 0px;
+  font-weight: 400;
+  @media (max-width: 768px) {
+    margin: 2px 0px 10px 0px;
+  }
+}
+
+.Breadcrumb {
+  color: #adabab;
+  margin-bottom: 20px;
+}
+
+.TabsWrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  border: none;
+  padding: 15px 20px;
+  gap: 0;
+  flex-wrap: nowrap !important;
+  border-bottom: none !important;
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
+}
+.TabsWrapper::-webkit-scrollbar {
+  width: 0px;
+}
+
+.TabsWrapper li {
+  background-color: transparent !important;
+  border: transparent !important;
+}
+.TabsWrapper li button {
+  background-color: transparent !important;
+  border: transparent !important;
+  color: #666666 !important;
+}
+
+.imgsWrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  width: 100%;
+  @media (max-width: 476px) {
+    row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  }
+}
+
+.img {
+  height: 290px;
+  //   padding: 20px;
+}
+
+.img img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/*****Our Work Section in Home Page*******/
+.WorkContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.WorkContainer h2 {
+  margin: 0;
+}
+.seeMoreLink {
+  cursor: pointer;
+  color: #808080bf;
+  right: 15px;
+  position: absolute;
+  &:hover {
+    color: #808080bf;
+  }
+}
+
+.seeMoreLink::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #808080bf;
+  transition: 0.3s;
+}
+
+.seeMoreLink:hover::before {
+  width: 0%;
+}

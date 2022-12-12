@@ -1,0 +1,156 @@
+.About {
+  min-height: calc(100vh - 500px);
+  margin-top: 100px;
+  @media (max-width: 768px) {
+    margin-top: 115px;
+  }
+  position: relative;
+}
+.Header {
+  color: #666666;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  margin: 2px 0px 60px 0px;
+  @media (max-width: 768px) {
+    margin: 2px 0px 10px 0px;
+  }
+}
+.backImg {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 60%;
+}
+.AboutWrapper {
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  gap: 10px;
+}
+
+.firstCol {
+  text-align: center;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.firstCol h2 {
+  color: #031843;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.firstCol p {
+  color: #646464;
+  width: 40%;
+  width: 50%;
+}
+
+.secondCol {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secondCol h2 {
+  color: #031843;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.secondCol p {
+  color: #646464;
+  width: 70%;
+  font-size: 18px;
+}
+
+.secondCol__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+}
+.secondCol__img {
+  display: flex;
+  justify-content: center;
+}
+
+.thirdCol {
+  display: flex;
+  justify-content: space-between;
+}
+
+.thirdCol h2 {
+  color: #031843;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.thirdCol p {
+  color: #646464;
+  width: 70%;
+  font-size: 18px;
+}
+
+.thirdCol__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.thirdCol__img {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .AboutWrapper {
+    gap: 30px;
+  }
+  .firstCol {
+    width: 100%;
+  }
+  .firstCol h2 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .firstCol p {
+    width: 100%;
+    flex-direction: column;
+  }
+  .secondCol {
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .secondCol p {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+  .secondCol__img img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+  }
+  .thirdCol {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .thirdCol__text {
+    align-items: center;
+  }
+  .thirdCol p {
+    width: 100%;
+    text-align: center;
+  }
+  .thirdCol__img img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+  }
+}
